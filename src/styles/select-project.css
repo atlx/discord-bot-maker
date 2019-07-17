@@ -1,0 +1,38 @@
+.select-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #eee;
+}
+
+.select-project > .box {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 8px #ddd;
+}
+
+.select-project > .box > .create {
+    width: 100%;
+    box-sizing: border-box;
+    background: #2ecc71;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-size: 18px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.select-project > .box > .list {
+    border: 2px solid #eee;
+    border-radius: 3px;
+    padding: 6px;
+    max-height: 300px;
+    overflow-y: auto;
+}

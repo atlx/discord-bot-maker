@@ -1,0 +1,38 @@
+.toolbar {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+    box-shadow: 0 0 8px #ddd;
+}
+
+.toolbar > .section > i {
+    color: #777;
+    font-size: 19px;
+    padding: 10px 13px;
+    border-radius: 3px;
+    cursor: pointer;
+    width: 24px;
+    text-align: center;
+}
+
+.toolbar > .section > i:hover {
+    background-color: #00a0db;
+    color: #fff;
+}
+
+.toolbar > .section > i.disabled {
+    cursor: default;
+    color: #aaa;
+    background-color: #fff !important;
+}
+
+.toolbar > .section > i.active {
+    color: #fff;
+    background-color: #2ecc71;
+}
+
+.toolbar > .section > i:not(:last-child) {
+    margin-right: 10px;
+}

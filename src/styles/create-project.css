@@ -1,0 +1,62 @@
+.create-project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background-color: #eee;
+}
+
+.create-project > .box {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0 0 8px #ddd;
+}
+
+.create-project > .box > .label {
+    text-transform: uppercase;
+    font-size: 13px;
+    color: #555;
+    letter-spacing: 1px;
+}
+
+.create-project > .box > .label:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.create-project > .box > .field {
+    padding: 8px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 15px;
+    cursor: auto;
+}
+
+.create-project > .box > .field:focus {
+    border-color: #999;
+}
+
+.create-project > .box > .field:not(:last-child) {
+    margin-bottom: 18px;
+}
+
+.create-project > .box > .finish {
+    width: 100%;
+    padding: 13px;
+    box-sizing: border-box;
+    background-color: #2ecc71;
+    color: #fff;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.create-project > .box > .finish:hover {
+    background-color: #30d576;
+}

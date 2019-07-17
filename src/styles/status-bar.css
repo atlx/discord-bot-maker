@@ -1,0 +1,12 @@
+.status-bar {
+    display: flex;
+    padding: 0 5px;
+}
+
+.status-bar > .status-info {
+    display: flex;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: monospace;
+    letter-spacing: 1px;
+}

@@ -1,0 +1,26 @@
+.status-info {
+    display: flex;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-family: monospace;
+    letter-spacing: 1px;
+}
+
+.status-info:not(:last-child):after {
+    content: "\2014";
+    color: #777;
+    margin: 0 8px;
+}
+
+.status-info > .prefix {
+    color: #777;
+    margin-right: 5px;
+}
+
+.status-info > .prefix:after {
+    content: ":";
+}
+
+.status-info > .value {
+    color: #222;
+}

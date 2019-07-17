@@ -1,0 +1,45 @@
+.editor-section {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 8px #ddd;
+}
+
+.editor-section > .header {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 15px 25px;
+    justify-items: stretch;
+    align-items: center;
+}
+
+.editor-section > .header > .title {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #aaa;
+}
+
+.editor-section > .header > .create {
+    border: none;
+    text-align: right;
+    background-color: #2ecc71;
+    padding: 5px 15px;
+    border-radius: 3px;
+    display: inline-flex;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    align-items: center;
+    transition: background-color 0.2s;
+}
+
+.editor-section > .header > .create:hover {
+    background-color: #30d576;
+}
+
+.editor-section > .header > .create > i.fa {
+    font-size: 15px;
+    margin-right: 5px;
+    cursor: pointer;
+}

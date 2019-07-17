@@ -1,0 +1,54 @@
+.editor-list-item {
+    border: 1px solid #ddd;
+    display: grid;
+    align-items: center;
+    grid-gap: 15px;
+    grid-template-columns: 1fr auto;
+    padding: 10px 15px;
+    border-radius: 3px;
+    color: #555;
+}
+
+.editor-list-item.selected {
+    background-color: #00a0db;
+    color: #fff;
+    border-color: #0091c7;
+}
+
+.editor-list-item:hover > .actions {
+    visibility: visible;
+}
+
+.editor-list-item.selected > .actions > i.fa {
+    color: #fff;
+}
+
+.editor-list-item:not(:last-child) {
+    margin-bottom: 6px;
+}
+
+.editor-list-item > .name {
+    display: flex;
+    align-items: center;
+}
+
+.editor-list-item > .actions {
+    white-space: nowrap;
+    align-self: flex-start;
+    text-align: right;
+    visibility: hidden;
+}
+
+.editor-list-item > .actions > i.fa {
+    font-size: 14px;
+    color: #999;
+    cursor: pointer;
+}
+
+.editor-list-item > .actions > i.fa:not(:last-child) {
+    margin-right: 10px;
+}
+
+.editor-list-item > .actions > i.fa.fa-arrows-alt {
+    cursor: move;
+}
